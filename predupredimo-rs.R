@@ -4,7 +4,7 @@
 require(rgdal)
 require(leaflet)
 require(htmltools)
-load("predupredimo-Serbia-map")
+load("predupredimo-serbia-map")
 
 bins <- c(4000,5000, 6000,7000,8000, 9000,10000, 12000)
 pal <- colorBin("YlOrRd", domain = Serbia_leaflet@data$YPLLi17_19, bins = bins)
