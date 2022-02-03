@@ -9,6 +9,9 @@ load("predupredimo-serbia-map")
 opstine <- read.csv("opstine.csv")
 
 Serbia_leaflet@data$Opstina <- left_join(Serbia_leaflet@data, opstine, by=c("code"="Code"))$Opstina
+
+Serbia_leaflet@data[ is.na(Serbia_leaflet@data$Opstina),"Opstina"] <- c("Sevojno", "Niš-grad", "Novi Sad-grad")
+
 bins <- c(4000,5000, 6000,7000,8000, 9000,10000, 12000)
 pal <- colorBin("YlOrRd", domain = Serbia_leaflet@data$YPLLi17_19, bins = bins)
 
