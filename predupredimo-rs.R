@@ -31,7 +31,7 @@ labels <- sprintf(
   round(Serbia_leaflet@data$BrojPM25,0),
   round(Serbia_leaflet@data$YPLLpm2.5,0),
   round(Serbia_leaflet@data$Broj20172019avoidableBroj,0),
-  round(Serbia_leaflet@data$YPLLi20172019avoidable,0),
+  round(Serbia_leaflet@data$YPLL20172019avoidable,0),
   round(Serbia_leaflet@data$BrojSARS,0),
   round(Serbia_leaflet@data$YPLLSARS,0),
   round(Serbia_leaflet@data$YPLLSARS,0)
